@@ -4,37 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
+    <link rel="stylesheet" href="pagina2.css">
     <style>
         h2 {
             color: #020302;
-            background-color: #d60000;
+            background-color: #eae9e9;
             padding: 8px;
             border-radius: 4px;
+        }
+        /* Estilo para los enlaces de redes sociales */
+        .social-links a {
+            display: inline-block;
+            font-size: 24px; /* Tamaño más grande */
+            font-weight: bold; /* Negrillas */
+            color: #007BFF; 
+            text-decoration: none;
+            padding: 15px 25px; /* Espaciado interno */
+            border: 3px solid #FF5733; /* Borde con otro color */
+            border-radius: 12px; /* Bordes redondeados */
+            margin: 15px 0; /* Espaciado entre enlaces */
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #FF5733; /* Fondo al pasar el cursor */
+            color: #fff; /* Texto blanco al pasar el cursor */
         }
     </style>
 </head>
 <body>
+    
     <h2>Hoja de vida</h2>
-    <h1>Hoja de vida</h1>
-    <p>Soy Santiago, tengo 18 años, vivo en Santa Marta, Magdalena y toda mi vida he vivido en ella.</p>
-    <img src="/cara.jpg" 
-         width="300" height="400">
-       <a href>/</a>
-       <!-- Enlaces a redes sociales -->
-    <h3>Mis redes sociales</h3>
+<nav>
     <ul>
         <li>
-            <a href="https://www.facebook.com/youtarta/" target="_blank">🌐 Facebook</a>
+            <a href="#">mis gustos</a>
+            <ul>
+                <li><a href="#">estudiar</a></li>
+                <li><a href="#">manejar bicicleta</a></li>
+                <li><a href="#">juegar</a></li>
+            </ul>
         </li>
         <li>
-            <a href="https://www.instagram.com/youtarta/" target="_blank">📸 Instagram</a>
+            <a href="#">estudios</a>
+            <ul>
+                <li><a href="#">ingeniero de sistemas</a></li>
+                <li><a href="#">progrmador</a></li>
+                <li><a href="#">tecnologo electronico</a></li>
+            </ul>
         </li>
-        <li>
-            <a href="https://x.com/BantivoL" target="_blank">🐦 Twitter</a>
-        </li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contáctanos</a></li>
     </ul>
+</nav>
+    <p>Soy Santiago, tengo 18 años, vivo en Santa Marta, Magdalena y toda mi vida he vivido en ella.</p>
+    
+<div class="profile-box">
+    <div class="image-container">
+        <img src="/cara.jpg" alt="Imagen personal" width="300" height="400">
+    </div>
+    <div class="info-container">
+        <h3>Sobre mí</h3>
+        <p>Hola, soy Santiago. Tengo 18 años y vivo en Santa Marta, Magdalena. Me apasiona aprender y disfrutar de mi ciudad.</p>
+        <p> mis gustos son manejar bicicleta me gusta</p>
+    </div>
+</div>
+</div>
+    <!-- Enlaces a redes sociales -->
+    <h3 style="color: white; font-size: 32px; font-weight: bold; border: 2px solid white; padding: 10px; background-color: rgba(0, 0, 0, 0.7);">mis redes sociales</h3>
 
-    <h3>Lista de deberes</h3>
+    <div class="social-links">
+        <a href="https://www.facebook.com/youtarta/" target="_blank">🌐 Facebook</a>
+        <a href="https://www.instagram.com/youtarta/" target="_blank">📸 Instagram</a>
+        <a href="https://x.com/BantivoL" target="_blank">🐦 Twitter</a>
+    </div>
+
+    <h3 style="color: white; font-size: 32px; font-weight: bold; border: 2px solid white; padding: 10px; background-color: rgba(0, 0, 0, 0.7);">lista de deberes</h3>
     <table border="2" width="700">
         <tr>
             <th>Deber</th>
@@ -69,7 +113,7 @@
             <td>Ser optimista y afrontar los retos con buena disposición</td>
         </tr>
     </table>
-    <h3>Formulario de contacto</h3>
+    <h4>Formulario de contacto</h4>
     <form action="#" method="post">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
@@ -81,5 +125,10 @@
         <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
 
         <input type="submit" value="Enviar">
+    </form>
+    <a href="https://wa.link/y15khu">este es mi whatsapp</a><br>
+
     
+    <img src="/qr wh (2).png" alt="QR de WhatsApp" class="qr-image">
 </body>
+</html>
